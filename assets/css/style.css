@@ -1,0 +1,42 @@
+:root {
+  --x: 0px;
+  --y: 0px;
+}
+
+.content-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 80px;
+  display: block;
+}
+.box__box-button {
+  display: flex;
+  gap: 30px;
+  max-width: 300px;
+  width: 100%;
+}
+.box__button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 50px;
+}
+.box__button--agree {
+  background-color: #1ed760;
+  position: relative;
+  top: var(--y);
+  left: var(--x);
+}
+.box__button--disagree {
+  background-color: #f71d08;
+}
