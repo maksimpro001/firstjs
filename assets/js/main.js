@@ -11,6 +11,7 @@ button_disagree.addEventListener("click", function (e) {
   img.classList.add("qwerty");
 });
 button_agree.addEventListener("mouseenter", function (e) {
+  button_agree.classList.add("qwerty1");
   x = randomNumber(0, body.scrollWidth - button_agree.scrollWidth);
   y = randomNumber(0, body.scrollHeight - button_agree.scrollHeight);
   document.documentElement.style.setProperty("--x", x + "px");

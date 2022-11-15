@@ -1,6 +1,6 @@
 :root {
-  --x: 50%;
-  --y: 50%;
+  --x: 0;
+  --y: 0;
 }
 
 .content-box {
@@ -33,10 +33,6 @@
 }
 .box__button--agree {
   background-color: #1ed760;
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  transform: translateY(10%);
 }
 .box__button--disagree {
   cursor: pointer;
@@ -54,4 +50,10 @@
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+.qwerty1 {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
 }
