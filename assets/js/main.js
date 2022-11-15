@@ -1,10 +1,19 @@
 var x;
 var y;
-const button = document.querySelector(".box__button--agree");
-function randomNumber() {
-  x = Math.round(Math.random() * 800);
-  y = Math.round(Math.random() * 500);
+const button_agree = document.querySelector(".box__button--agree");
+const button_disagree = document.querySelector(".box__button--disagree");
+const img = document.querySelector(".img");
+const body = document.querySelector(".body");
+function randomNumber(minNum, maxNum) {
+  return Math.random() * maxNum + minNum;
+}
+button_disagree.addEventListener("click", function (e) {
+  img.classList.add("qwerty");
+});
+button_agree.addEventListener("mouseenter", function (e) {
+  x = randomNumber(0, body.scrollWidth - button_agree.scrollWidth);
+  y = randomNumber(0, body.scrollHeight - button_agree.scrollHeight);
   document.documentElement.style.setProperty("--x", x + "px");
   document.documentElement.style.setProperty("--y", y + "px");
-}
-button.addEventListener("mouseenter", randomNumber);
+  console.log(x, y);
+});
